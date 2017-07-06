@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="old," />
 
 
 
@@ -93,16 +93,17 @@
 
 
 
-<meta name="description" content="android">
+<meta name="description" content="安装出错原因： 在反复安装android apk的时候，有的时候可能会遇到adb install错误，内容是：Failure [INSTALL_FAILED_UPDATE_INCOMPATIBLE]这很可能是因为你在以前uninstall应用的时候，没有做彻底 其他我就不说了，说个操作简单解决办法： adb uninstall package-name (这个在adb的帮助文档中没有说明，但可以用">
+<meta name="keywords" content="old">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test3">
-<meta property="og:url" content="http://nirvandy.github.io/2017/07/06/test3/index.html">
+<meta property="og:title" content="adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决">
+<meta property="og:url" content="http://nirvandy.github.io/2017/07/06/adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决/index.html">
 <meta property="og:site_name" content="Nirvandy">
-<meta property="og:description" content="android">
-<meta property="og:updated_time" content="2017-07-06T09:43:28.000Z">
+<meta property="og:description" content="安装出错原因： 在反复安装android apk的时候，有的时候可能会遇到adb install错误，内容是：Failure [INSTALL_FAILED_UPDATE_INCOMPATIBLE]这很可能是因为你在以前uninstall应用的时候，没有做彻底 其他我就不说了，说个操作简单解决办法： adb uninstall package-name (这个在adb的帮助文档中没有说明，但可以用">
+<meta property="og:updated_time" content="2017-07-06T10:55:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test3">
-<meta name="twitter:description" content="android">
+<meta name="twitter:title" content="adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决">
+<meta name="twitter:description" content="安装出错原因： 在反复安装android apk的时候，有的时候可能会遇到adb install错误，内容是：Failure [INSTALL_FAILED_UPDATE_INCOMPATIBLE]这很可能是因为你在以前uninstall应用的时候，没有做彻底 其他我就不说了，说个操作简单解决办法： adb uninstall package-name (这个在adb的帮助文档中没有说明，但可以用">
 
 
 
@@ -130,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://nirvandy.github.io/2017/07/06/test3/"/>
+  <link rel="canonical" href="http://nirvandy.github.io/2017/07/06/adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决/"/>
 
 
 
 
 
-  <title>test3 | Nirvandy</title>
+  <title>adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决 | Nirvandy</title>
   
 
 
@@ -255,7 +256,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://nirvandy.github.io/2017/07/06/test3/">
+    <link itemprop="mainEntityOfPage" href="http://nirvandy.github.io/2017/07/06/adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nirvandy">
@@ -272,7 +273,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">test3</h1>
+          <h1 class="post-title" itemprop="name headline">adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决</h1>
         
 
         <div class="post-meta">
@@ -284,7 +285,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-06T17:43:28+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-06T18:53:31+08:00">
                 2017-07-06
               </time>
             
@@ -297,6 +298,17 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/07/06/adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/07/06/adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -319,7 +331,12 @@
       
 
       
-        
+        <p>安装出错原因：</p>
+<p>在反复安装android apk的时候，有的时候可能会遇到adb install错误，内容是：Failure [INSTALL_FAILED_UPDATE_INCOMPATIBLE]<br>这很可能是因为你在以前uninstall应用的时候，没有做彻底</p>
+<p>其他我就不说了，说个操作简单解决办法：</p>
+<p>adb uninstall package-name (这个在adb的帮助文档中没有说明，但可以用)<br>什么，不知道package-name？看看你的AndroidManifest.xml中有个必须的属性就是package，它所指定的就是package-name。</p>
+<p>【由于Linux下是区分大小写的，注意包名大小写】</p>
+
       
     </div>
 
@@ -346,6 +363,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/old/" rel="tag"># old</a>
+          
+        </div>
+      
 
       
       
@@ -355,8 +378,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/06/test2/" rel="next" title="test2">
-                <i class="fa fa-chevron-left"></i> test2
+              <a href="/2017/07/06/java类的全局变量与静态变量/" rel="next" title="类的全局变量与静态变量">
+                <i class="fa fa-chevron-left"></i> 类的全局变量与静态变量
               </a>
             
           </div>
@@ -388,6 +411,13 @@
 
           
   <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     
   </div>
 
@@ -434,6 +464,15 @@
 
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
           
 
         </nav>
@@ -585,6 +624,26 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://nirvandy.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://nirvandy.github.io/2017/07/06/adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决/';
+          this.page.identifier = '2017/07/06/adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决/';
+          this.page.title = 'adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://nirvandy.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
 
 
 
@@ -603,10 +662,6 @@
   
 
 
-
-
-
-  
 
 
 

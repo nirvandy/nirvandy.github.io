@@ -256,7 +256,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://nirvandy.github.io/2017/07/06/test3/">
+    <link itemprop="mainEntityOfPage" href="http://nirvandy.github.io/2017/07/06/adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nirvandy">
@@ -275,7 +275,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/06/test3/" itemprop="url">test3</a></h1>
+                <a class="post-title-link" href="/2017/07/06/adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决/" itemprop="url">adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决</a></h1>
         
 
         <div class="post-meta">
@@ -287,7 +287,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-06T17:43:28+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-06T18:53:31+08:00">
                 2017-07-06
               </time>
             
@@ -300,6 +300,17 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/07/06/adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/07/06/adb install时 INSTALL_FAILED_UPDATE_INCOMPATIBLE解决/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -324,7 +335,12 @@
       
         
           
-            
+            <p>安装出错原因：</p>
+<p>在反复安装android apk的时候，有的时候可能会遇到adb install错误，内容是：Failure [INSTALL_FAILED_UPDATE_INCOMPATIBLE]<br>这很可能是因为你在以前uninstall应用的时候，没有做彻底</p>
+<p>其他我就不说了，说个操作简单解决办法：</p>
+<p>adb uninstall package-name (这个在adb的帮助文档中没有说明，但可以用)<br>什么，不知道package-name？看看你的AndroidManifest.xml中有个必须的属性就是package，它所指定的就是package-name。</p>
+<p>【由于Linux下是区分大小写的，注意包名大小写】</p>
+
           
         
       
@@ -367,7 +383,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://nirvandy.github.io/2017/07/06/test2/">
+    <link itemprop="mainEntityOfPage" href="http://nirvandy.github.io/2017/07/06/java类的全局变量与静态变量/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nirvandy">
@@ -386,7 +402,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/06/test2/" itemprop="url">test2</a></h1>
+                <a class="post-title-link" href="/2017/07/06/java类的全局变量与静态变量/" itemprop="url">类的全局变量与静态变量</a></h1>
         
 
         <div class="post-meta">
@@ -398,7 +414,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-06T17:40:35+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-06T18:42:42+08:00">
                 2017-07-06
               </time>
             
@@ -411,6 +427,17 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/07/06/java类的全局变量与静态变量/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/07/06/java类的全局变量与静态变量/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -435,7 +462,9 @@
       
         
           
-            
+            <p><strong>全局变量</strong>（成员变量）<br>是在创建对象的时候分配内存的，创建对象过程为：<br>1分配空间<br>2递归的创建父类对象（无父类这步可省略）<br>3初始化成员变量<br>4调用构造方法创建一个对象</p>
+<p><strong>静态变量</strong>是在类加载的时候分配空间的，静态变量和对象没有关系，是在JVM第一次读到一个类的时候加载信息的过程中分配空间的，类加载过程为：<br>1加载父类（如果父类已经加载过，则不在加载）<br>2初始化静态属性3按顺序的初始化静态代码块<br>初始化的前提就是分配空间，而且静态变量在以后的创建对象的时候不在初始化所以一般用静态来保存共享信息。</p>
+
           
         
       
@@ -478,7 +507,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://nirvandy.github.io/2017/07/06/text/">
+    <link itemprop="mainEntityOfPage" href="http://nirvandy.github.io/2017/07/06/adb push与install的区别/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nirvandy">
@@ -497,7 +526,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/06/text/" itemprop="url">text</a></h1>
+                <a class="post-title-link" href="/2017/07/06/adb push与install的区别/" itemprop="url">adb push与install的区别</a></h1>
         
 
         <div class="post-meta">
@@ -523,6 +552,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/07/06/adb push与install的区别/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/07/06/adb push与install的区别/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -546,7 +586,16 @@
       
         
           
-            
+            <p>adb push和adb install是apk包安装的两种方法，用法如下：</p>
+<p>1.adb push XXX.apk /你想推送的路径</p>
+<p>2.adb install XXX.apk</p>
+<p>显而易见，两者的区别是，adb push可以自定义推送路径，adb install 只能安装在/data/app文件下。</p>
+<p>其次，adb push 是将apk包复制到路径下面，重启后/system/app和/data/app下的apk包都会自动安装。</p>
+<p>adb install是将apk安装到手机里，流程是：</p>
+<p>复制APK安装包到data/app目录下，解压并扫描安装包，把dex文件(Dalvik字节码)保存到dalvik-cache目录，并data/data目录下创建对应的应用数据目录（so文件也在./包名/lib下，或者/data/app-lib/包名）。</p>
+<p>另外，install复制APK安装包到data/app目录下的过程中，会将apk名改为包名-1.apk，数字为android接收到的版本号。</p>
+<p>其中对于/system文件夹比较容易碰到的问题是报read only file的错误，哪怕/system已经被你改成了777的权限，解决的方法是：1.adb shell 2.su 3.mount -o remount rw /system重新挂载一下/system文件系统</p>
+
           
         
       
@@ -633,6 +682,15 @@
 
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
           
 
         </nav>
@@ -784,6 +842,14 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://nirvandy.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
 
 
 
@@ -802,10 +868,6 @@
   
 
 
-
-
-
-  
 
 
 
